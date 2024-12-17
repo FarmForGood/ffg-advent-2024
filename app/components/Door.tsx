@@ -3,9 +3,10 @@ import Link from "next/link";
 interface DoorProps {
   day: number;
   url: string;
+  word: string;
 }
 
-const Door: React.FC<DoorProps> = ({ day, url }) => {
+const Door: React.FC<DoorProps> = ({ day, url, word }) => {
   return (
     <Link href={url} className="door-container" target="_blank">
       <div className="door">
@@ -13,7 +14,7 @@ const Door: React.FC<DoorProps> = ({ day, url }) => {
           <span className="text-2xl font-bold">{day}</span>
         </div>
         <div className="door-back">
-          <span className="text-2xl font-bold">?</span>
+          <span className="text-2xl font-bold">{word}</span>
         </div>
       </div>
     </Link>

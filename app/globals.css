@@ -5,6 +5,7 @@
 .door-container {
   perspective: 1000px;
   aspect-ratio: 1;
+  z-index: 1;
 }
 
 .door {
@@ -13,10 +14,12 @@
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  z-index: 1;
 }
 
 .door-container:hover .door {
-  transform: rotateY(-120deg);
+  transform: rotateY(-180deg) scale3d(2, 2, 2);
+  z-index: 5000;
 }
 
 .door-front,
@@ -35,11 +38,13 @@
   background-color: #f0f0f0;
   border: 2px solid #333;
   color: #333;
+  z-index: 1;
 }
 
 .door-back {
   background-color: #4a5568;
   transform: rotateY(180deg);
+  z-index: 5000;
 }
 
 @keyframes fall {
@@ -50,4 +55,3 @@
     transform: translateY(100vh) rotate(360deg);
   }
 }
-
