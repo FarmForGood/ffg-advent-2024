@@ -4,7 +4,7 @@ import calendar from "@/app/images/ffg-calendar.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-br from-red-700 to-green-700 relative overflow-hidden">
+    <main className=" flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-br from-red-700 to-green-700 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(50)].map((_, i) => (
           <div

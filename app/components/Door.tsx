@@ -14,7 +14,7 @@ const Door: React.FC<DoorProps> = ({ day, url, word }) => {
           <span className="text-2xl font-bold">{day}</span>
         </div>
         <div className="door-back">
-          <span className="text-2xl font-bold">{word}</span>
+          <span className="text-2xl font-bold text-center">{word}</span>
         </div>
       </div>
     </Link>
