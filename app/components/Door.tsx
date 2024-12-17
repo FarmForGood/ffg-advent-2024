@@ -13,8 +13,11 @@ const Door: React.FC<DoorProps> = ({ day, url, word }) => {
         <div className="door-front">
           <span className="text-2xl font-bold">{day}</span>
         </div>
-        <div className="door-back">
-          <span className="text-2xl font-bold text-center">{word}</span>
+        <div className="door-back flex flex-col p-2">
+          <span className="text-xl">{word}</span>
+          <span className="text-xs text-gray-600 text-center">
+            Cliquez pour en savoir plus...
+          </span>
         </div>
       </div>
     </Link>
