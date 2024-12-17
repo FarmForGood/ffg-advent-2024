@@ -1,22 +1,22 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Advent Calendar',
-  description: 'An interactive Advent Calendar',
-}
+  title: "Calendrier de l'Avent de Farm For Good",
+  description:
+    "Cette année, Farm For Good a décidé de vous gâter et de vous divertir quotidiennement, durant 24 jours, pour attendre Noël ensemble🎄avec un calendrier de l’Avent digital !",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
-
