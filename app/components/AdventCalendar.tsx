@@ -135,7 +135,7 @@ const AdventCalendar = () => {
         ))}
       </div>
       <div className="text-center text-white text-4xl p-12">
-        Nos meilleurs voeux et à l'année prochaine !
+        Nos meilleurs voeux et à l&apos;année prochaine !
       </div>
     </>
   );
