@@ -125,11 +125,19 @@ const DAYS = [
 
 const AdventCalendar = () => {
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 max-w-4xl w-full">
-      {DAYS.map((day, i) => (
-        <Door key={i} url={day.url} day={i + 1} word={day.word} />
-      ))}
-    </div>
+    <>
+      <div className="text-center text-white text-2xl p-12">
+        Cliquez sur une porte pour retrouver le message du jour
+      </div>
+      <div className="grid grid-cols-4 sm:grid-cols-6 gap-4 max-w-4xl w-full">
+        {DAYS.map((day, i) => (
+          <Door key={i} url={day.url} day={i + 1} word={day.word} />
+        ))}
+      </div>
+      <div className="text-center text-white text-4xl p-12">
+        Nos meilleurs voeux et à l'année prochaine !
+      </div>
+    </>
   );
 };
 
