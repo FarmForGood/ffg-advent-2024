@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AdventCalendar from "./components/AdventCalendar";
-import calendar from "@/app/images/ffg-calendar.png";
+import calendar from "@/app/images/banneradvent.png";
 
 export default function Home() {
   return (
